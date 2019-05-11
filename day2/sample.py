@@ -37,13 +37,14 @@ def is_leap_year(year):
 
 
 if __name__ == '__main__':
-    # celsius = 37.5
-    # print('%.2f℃ = %.2f℉' % (celsius, celsius_to_fahrenheit(celsius)))
-    # fah = 120
-    # print('%.2f℉ = %.2f℃' % (fah, fahrenheit_to_celsius(fah)))
+    celsius = 37.5
+    print('%.2f℃ = %.2f℉' % (celsius, celsius_to_fahrenheit(celsius)))
+    fah = 120
+    print('%.2f℉ = %.2f℃' % (fah, fahrenheit_to_celsius(fah)))
 
-    # radius = float(input('radius='))
-    # print("周长=%.2f\n面积=%.2f" % (calc_perimeter(radius), calc_area(radius)))
+    radius = float(input('radius='))
+    print("周长=%.2f\n面积=%.2f" % (calc_perimeter(radius), calc_area(radius)))
 
     year = int(input('year='))
     print("%d%s闰年" % (year,  '是' if is_leap_year(year) else '不是'))
+
