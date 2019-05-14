@@ -8,15 +8,24 @@ import time
 import sys
 import pyqrcode
 import qrcode
+import datetime
+import logging
+
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
 
 def post(url, json_data):
     headers = {"Content-Type": "application/json"}
     ctx = ssl.SSLContext()
+    data_json = json.dumps(json_data)
+    logging.debug('send: %s', data_json)
+
     req = request.Request(url=url,
-                          headers=headers, data=json.dumps(json_data).encode('utf-8'))
+                          headers=headers, data=data_json.encode('utf-8'))
     resp = request.urlopen(req, timeout=10, context=ctx)
     data = resp.read().decode("utf-8")
+    
+    logging.debug('receive: %s', data)
     return json.loads(data)
 
 
@@ -28,11 +37,12 @@ def heartbeat(code):
     return errcode
 
 
-def publish(code, token, message):
+def publish(code, token, message, link=''):
     param = {
         'code': code,
         'token': token,
-        'message': message
+        'message': message,
+        'link': link
     }
     url = "https://api.st.link/angelia/botpublish"
     data = post(url, param)
@@ -125,6 +135,9 @@ def github_daily_trending():
         else:
             data['today_star'] = today_start_svg.next_sibling.string.strip()
         data['folk'] = div_list[3].find_all('a')[1].get_text().strip()
+
+        # data['update'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        data['update'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
         trending.append(data)
     return trending
 
@@ -132,12 +145,12 @@ def github_daily_trending():
 def trend_item_str(item):
     text = '[daily trending]\n' + item['title'] + ((' (' + item['lang'] + ')')
                                                    if item['lang'] is not None else '') + '\n'
+    text = text + '[更新于 ' + item['update'] + ' ]\n'
     text = text + item['desc'] + '\n'
     text = text + \
         'star: %s(%s)' % (item['star'], item['today_star']) + '\n'
-    text = text + 'folk: ' + item['folk'] + '\n'
-    text = text + item['link']
-    return text
+    text = text + 'folk: ' + item['folk']
+    return (text, item['link'] if item['link'] is not None else '')
 
 
 if __name__ == "__main__":
@@ -145,9 +158,12 @@ if __name__ == "__main__":
         'token': "4044a4fe7a0437838d1003f3fb369367",
         'code': "f188414a716611e9a4ca3663a0d9922f"
     }
-    # test_bot(config)
-    result = github_daily_trending()
-    heartbeat(config['code'])
-    for item in result:
-        msg = trend_item_str(item)
-        publish(config['code'], config['token'], msg)
+    if len(sys.argv) > 1 and sys.argv[1] == 'test':
+        test_bot(config)
+    else:
+        result = github_daily_trending()
+        heartbeat(config['code'])
+        for item in result:
+            msg, link = trend_item_str(item)
+            publish(config['code'], config['token'], msg, link)
+            logging.debug('%s\n%s\n[%s]\n', '=' * 80, msg, link)
