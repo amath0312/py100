@@ -153,7 +153,7 @@ def github_daily_trending():
 def trend_item_str(item):
     text = '[daily trending]\n' + item['title'] + ((' (' + item['lang'] + ')')
                                                    if item['lang'] is not None else '') + '\n'
-    text = text + '[æ›´æ–°äºŽ ' + item['update'] + ' ]\n'
+    text = text + '[更新于 ' + item['update'] + ' ]\n'
     text = text + item['desc'] + '\n'
     text = text + \
         'star: %s(%s)' % (item['star'], item['today_star']) + '\n'
