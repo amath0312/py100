@@ -1,6 +1,7 @@
 # -*- coding: utf8 -*-
 
 from urllib import request
+from urllib.parse import urlencode, quote
 import bs4
 import ssl
 import json
@@ -14,17 +15,24 @@ import logging
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
 
-def post(url, json_data):
+def post(url, json_data=None):
     headers = {"Content-Type": "application/json"}
     ctx = ssl.SSLContext()
-    data_json = json.dumps(json_data)
-    logging.debug('send: %s', data_json)
+    if json_data is not None:
+        try:
+            data_json = json.dumps(json_data)
+        except:
+            data_json = None
+    else:
+        data_json = None
+    logging.debug('send: %s, url=%s' % (data_json, url))
 
+    post_data = None if data_json is None else data_json.encode('utf-8')
     req = request.Request(url=url,
-                          headers=headers, data=data_json.encode('utf-8'))
+                          headers=headers, data=post_data, method='POST')
     resp = request.urlopen(req, timeout=10, context=ctx)
     data = resp.read().decode("utf-8")
-    
+
     logging.debug('receive: %s', data)
     return json.loads(data)
 
@@ -145,7 +153,7 @@ def github_daily_trending():
 def trend_item_str(item):
     text = '[daily trending]\n' + item['title'] + ((' (' + item['lang'] + ')')
                                                    if item['lang'] is not None else '') + '\n'
-    text = text + '[更新于 ' + item['update'] + ' ]\n'
+    text = text + '[æ›´æ–°äºŽ ' + item['update'] + ' ]\n'
     text = text + item['desc'] + '\n'
     text = text + \
         'star: %s(%s)' % (item['star'], item['today_star']) + '\n'
@@ -158,8 +166,11 @@ if __name__ == "__main__":
         'token': "4044a4fe7a0437838d1003f3fb369367",
         'code': "f188414a716611e9a4ca3663a0d9922f"
     }
-    if len(sys.argv) > 1 and sys.argv[1] == 'test':
+    if len(sys.argv) > 1 and sys.argv[1] == 'console':
         test_bot(config)
+    elif len(sys.argv) > 1 and sys.argv[1] == 'test':
+        post('https://api.st.link/angelia/sendmessage/{}/{}/{}'.format(
+            config['code'], config['token'], quote('only_for_test')))
     else:
         result = github_daily_trending()
         heartbeat(config['code'])
