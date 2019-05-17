@@ -8,9 +8,7 @@ import os
 
 
 class GHTrending(botutils.Robot):
-    """
-    爬取Github Trending
-    """
+    """ 抓取Github Trending（daily）"""
 
     def __init__(self, config):
         super().__init__(config)
@@ -36,7 +34,6 @@ class GHTrending(botutils.Robot):
         last_date = datetime.datetime.now().strftime('%Y-%m-%d')
         with open(self._daily_log, 'w') as f:
             f.write(last_date)
-        
 
     def _crawl(self):
         logging.debug('publish github-trending')

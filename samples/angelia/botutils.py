@@ -27,7 +27,7 @@ class Robot(object):
 
     def post_to_bot(self, url, json_data=None):
         headers = {"Content-Type": "application/json"}
-        if json_data is not None:
+        if not json_data:
             try:
                 data_json = json.dumps(json_data)
             except:
@@ -77,6 +77,7 @@ def get(url, headers=None, queries=None, resp_encoding='utf-8'):
     """
     if queries is not None:
         url = url + "?" + urlencode(queries)
+
     logging.debug('get url: ' + url)
     ctx = ssl.SSLContext()
     headers = {} if headers is None else headers
@@ -174,9 +175,9 @@ class MessageItem(object):
         text += line
         text += self._desc
         text += line
-        if self._channel is not None and self._channel != '':
+        if self._channel:
             text += self._channel
 
-        if self._update is not None and self._update != '':
+        if self._update:
             text += ' 更新于 %s' % self._update
         return text
