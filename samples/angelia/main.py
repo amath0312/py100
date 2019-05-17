@@ -7,7 +7,7 @@ import qrcode
 import datetime
 import logging
 import botutils
-import ghtrending
+import ghtrending, osc
 
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
@@ -17,16 +17,20 @@ def main():
         'ghtrending': {
             'token': "4044a4fe7a0437838d1003f3fb369367",
             'code': "f188414a716611e9a4ca3663a0d9922f"
+        },
+        'osc':{
+            'code':'T34FYG',
+            'token':'8440bf8dd9683b3986a7bab5b7970af8'
         }
     }
     if len(sys.argv) > 1 and sys.argv[1] == 'console':
         test_bot(config)
     elif len(sys.argv) > 1 and sys.argv[1] == 'test':
-        botutils.post('https://api.st.link/angelia/sendmessage/{}/{}/{}'.format(
-            config['code'], config['token'], 'only_for_test'))
+        # botutils.post('https://api.st.link/angelia/sendmessage/{}/{}/{}'.format(
+            # config['code'], config['token'], 'only_for_test'))
+        osc.OSChina(config['osc']).publish()
     else:
         ghtrending.GHTrending(config['ghtrending']).publish()
-
 
 def print_help(actions):
     for act in actions:

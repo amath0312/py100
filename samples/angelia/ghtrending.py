@@ -4,16 +4,46 @@ import botutils
 import datetime
 import bs4
 import logging
+import os
 
 
 class GHTrending(botutils.Robot):
+    """
+    爬取Github Trending
+    """
+
+    def __init__(self, config):
+        super().__init__(config)
+        self._daily_log = os.path.join(self._config_path(), 'ght-daily.cache')
+
+    def publish(self):
+        if not self.is_today_published():
+            super().publish()
+            self.mark_today_published()
+        else:
+            logging.debug('has published today')
+
+    def is_today_published(self):
+        if not os.path.exists(self._daily_log):
+            return False
+        is_pub = False
+        with open(self._daily_log, 'r') as f:
+            last_date = f.readline().strip()
+            is_pub = last_date == datetime.datetime.now().strftime('%Y-%m-%d')
+        return is_pub
+
+    def mark_today_published(self):
+        last_date = datetime.datetime.now().strftime('%Y-%m-%d')
+        with open(self._daily_log, 'w') as f:
+            f.write(last_date)
+        
 
     def _crawl(self):
         logging.debug('publish github-trending')
         result = self.__daily_trending()
         for item in result:
-            msg, link = self.__str_item(item)
-            yield msg, link
+            msg = self.__to_msg(item)
+            yield msg
 
     def __daily_trending(self):
         url = 'https://github.com/trending?since=daily'
@@ -50,13 +80,13 @@ class GHTrending(botutils.Robot):
             trending.append(data)
         return trending
 
-    def __str_item(self, item):
-        text = '[daily trending] [更新于 ' + \
-            item['update'] + ' ]\n' + '-' * 25 + '\n'
-        text = text + item['title'] + ((' (' + item['lang'] + ')')
-                                       if item['lang'] is not None else '') + '\n'
-        text = text + item['desc'] + '\n'
-        text = text + \
-            'star: %s(%s)' % (item['star'], item['today_star']) + '\n'
-        text = text + 'folk: ' + item['folk']
-        return (text, item['link'] if item['link'] is not None else '')
+    def __to_msg(self, item):
+        msg = botutils.MessageItem(guid=item['title'])
+        msg.title = '%s %s' % (
+            item['title'], '(' + item['lang'] + ')' if item['lang'] is not None else '')
+        msg.channel = 'daily trending'
+        msg.link = item['link']
+        msg.update = item['update']
+        msg.desc = '%s\nstar: %s(%s)\nfolk: %s' % (
+            item['desc'], item['star'], item['today_star'],  item['folk'])
+        return msg
