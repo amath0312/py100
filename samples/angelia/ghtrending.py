@@ -1,5 +1,6 @@
 # -*- coding: utf8 -*-
 
+import dailybot
 import botutils
 import datetime
 import bs4
@@ -7,33 +8,11 @@ import logging
 import os
 
 
-class GHTrending(botutils.Robot):
+class GHTrending(dailybot.DailyRobot):
     """ 抓取Github Trending（daily）"""
 
     def __init__(self, config):
         super().__init__(config)
-        self._daily_log = os.path.join(self._config_path(), 'ght-daily.cache')
-
-    def publish(self):
-        if not self.is_today_published():
-            super().publish()
-            self.mark_today_published()
-        else:
-            logging.debug('has published today')
-
-    def is_today_published(self):
-        if not os.path.exists(self._daily_log):
-            return False
-        is_pub = False
-        with open(self._daily_log, 'r') as f:
-            last_date = f.readline().strip()
-            is_pub = last_date == datetime.datetime.now().strftime('%Y-%m-%d')
-        return is_pub
-
-    def mark_today_published(self):
-        last_date = datetime.datetime.now().strftime('%Y-%m-%d')
-        with open(self._daily_log, 'w') as f:
-            f.write(last_date)
 
     def _crawl(self):
         logging.debug('publish github-trending')

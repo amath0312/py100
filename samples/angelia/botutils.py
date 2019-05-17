@@ -17,7 +17,7 @@ class Robot(object):
 
     def publish(self):
         messages = self._crawl()
-        if messages is not None:
+        if messages:
             self.heartbeat()
             counter = 0
             for msg in messages:
@@ -27,7 +27,7 @@ class Robot(object):
 
     def post_to_bot(self, url, json_data=None):
         headers = {"Content-Type": "application/json"}
-        if not json_data:
+        if json_data:
             try:
                 data_json = json.dumps(json_data)
             except:
@@ -36,7 +36,7 @@ class Robot(object):
             data_json = None
         logging.debug('send: %s, url=%s' % (data_json, url))
 
-        post_data = None if data_json is None else data_json
+        post_data = data_json if data_json else None
         data = post(url, headers=headers, data=post_data)
 
         logging.debug('receive: %s', data)
@@ -88,7 +88,7 @@ def get(url, headers=None, queries=None, resp_encoding='utf-8'):
     return resp_data
 
 
-def post(url, headers=None, data=None, resp_encoding='utf-8'):
+def post(url, headers=None, data=None, resp_encoding='utf-8', timeout=30):
     """
     提交post请求
     :param url: 请求地址
@@ -98,8 +98,8 @@ def post(url, headers=None, data=None, resp_encoding='utf-8'):
     ctx = ssl.SSLContext()
     headers = {} if headers is None else headers
     req = request.Request(url=url,
-                          headers=headers, data=data.encode('utf-8'), method='POST')
-    resp = request.urlopen(req, timeout=10, context=ctx)
+                          headers=headers, data=data.encode('utf-8') if data else None, method='POST')
+    resp = request.urlopen(req, timeout=timeout, context=ctx)
     resp_data = resp.read().decode(resp_encoding)
     return resp_data
 
@@ -163,7 +163,7 @@ class MessageItem(object):
 
     @property
     def desc(self):
-        return self.desc
+        return self._desc
 
     @desc.setter
     def desc(self, desc):

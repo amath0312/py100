@@ -19,7 +19,7 @@ def main():
             'code': "f188414a716611e9a4ca3663a0d9922f"
         },
         'osc':{
-            'code':'T34FYG',
+            'code':'conda',
             'token':'8440bf8dd9683b3986a7bab5b7970af8'
         }
     }
@@ -31,6 +31,8 @@ def main():
         osc.OSChina(config['osc']).publish()
     else:
         ghtrending.GHTrending(config['ghtrending']).publish()
+        osc.OSChina(config['osc']).publish()
+        
 
 def print_help(actions):
     for act in actions:
