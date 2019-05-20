@@ -19,7 +19,7 @@ def main():
             'code': "f188414a716611e9a4ca3663a0d9922f"
         },
         'osc':{
-            'code':'conda',
+            'code':'T34FYG',
             'token':'8440bf8dd9683b3986a7bab5b7970af8'
         }
     }
@@ -59,13 +59,13 @@ def test_bot(config):
                 print("heart beat success")
             else:
                 print('heart beat fail, ', errcode)
-        elif action == 'm':
-            msg = input('input message: ')
-            errcode = publish(config['code'], config['token'], msg)
-            if errcode == 0:
-                print("send message success")
-            else:
-                print('send message fail, ', errcode)
+        # elif action == 'm':
+        #     msg = input('input message: ')
+        #     errcode = publish(config['code'], config['token'], msg)
+        #     if errcode == 0:
+        #         print("send message success")
+        #     else:
+        #         print('send message fail, ', errcode)
         elif action == 's':
             bot_code = input('input bot code: ')
             # img = pyqrcode.create(content=bot_code, version=1)

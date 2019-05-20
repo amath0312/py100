@@ -5,11 +5,12 @@ from urllib.parse import urlencode, quote
 import bs4
 import ssl
 import json
-import logging
 import os
+from abc import ABCMeta, abstractmethod
+import logging
 
 
-class Robot(object):
+class Robot(object, metaclass=ABCMeta):
 
     def __init__(self, config):
         self._token = config.get('token')
@@ -21,35 +22,41 @@ class Robot(object):
             self.heartbeat()
             counter = 0
             for msg in messages:
-                self.bot_publish(message=str(msg), link=msg.link)
+                errcode = self.bot_publish(message=str(msg), link=msg.link)
+                if errcode != 0:
+                    raise PublishError(errcode=errcode, msg=msg)
+
                 counter += 1
             logging.debug('publish %d messages' % counter)
 
-    def post_to_bot(self, url, json_data=None):
+    def post_to_bot(self, url, data=None):
         headers = {"Content-Type": "application/json"}
-        if json_data:
+        if data:
             try:
-                data_json = json.dumps(json_data)
+                data_json = json.dumps(data)
             except:
                 data_json = None
         else:
             data_json = None
-        logging.debug('send: %s, url=%s' % (data_json, url))
+        logging.debug('send: %s, url=%s' %
+                      (data_json.encode('utf-8').decode('unicode_escape'), url))
 
         post_data = data_json if data_json else None
-        data = post(url, headers=headers, data=post_data)
+        resp_data = post(url, headers=headers, data=post_data)
 
-        logging.debug('receive: %s', data)
-        return json.loads(data)
+        logging.debug('receive: %s', resp_data)
+        return json.loads(resp_data)
 
     def heartbeat(self):
-        param = {"code": self._code}
+        """发送机器人心跳检测"""
+        param = {"code": self._code, 'sample': '测试'}
         url = "https://api.st.link/angelia/heartbeat"
         data = self.post_to_bot(url, param)
         errcode = data['errcode']
         return errcode
 
     def bot_publish(self, message, link=''):
+        """发送订阅消息"""
         param = {
             'code': self._code,
             'token': self._token,
@@ -61,7 +68,9 @@ class Robot(object):
         errcode = data['errcode']
         return errcode
 
+    @abstractmethod
     def _crawl(self):
+        """抓取订阅源并返回消息列表"""
         pass
 
     def _config_path(self):
@@ -88,7 +97,7 @@ def get(url, headers=None, queries=None, resp_encoding='utf-8'):
     return resp_data
 
 
-def post(url, headers=None, data=None, resp_encoding='utf-8', timeout=30):
+def post(url, headers=None, data=None, resp_encoding='unicode_escape', timeout=30):
     """
     提交post请求
     :param url: 请求地址
@@ -102,6 +111,16 @@ def post(url, headers=None, data=None, resp_encoding='utf-8', timeout=30):
     resp = request.urlopen(req, timeout=timeout, context=ctx)
     resp_data = resp.read().decode(resp_encoding)
     return resp_data
+
+
+class PublishError(Exception):
+
+    def __init__(self, errcode, msg):
+        self.errcode = errcode
+        self.msg = msg
+
+    def __str__(self):
+        return 'PublishError(%d): %s' % (self.errcode, repr(self.msg))
 
 
 class MessageItem(object):
@@ -181,3 +200,6 @@ class MessageItem(object):
         if self._update:
             text += ' 更新于 %s' % self._update
         return text
+
+    def __repr__(self):
+        return self.__str__()

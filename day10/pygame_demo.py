@@ -102,6 +102,7 @@ class Game(object):
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
+                    pass
                 elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                     x, y = event.pos
                     self.create_ball(x, y)
@@ -127,11 +128,12 @@ def main():
     # screen.blit(ball_image, (50, 50))
     # pygame.display.flip()
     def draw_ball():
-        ball_img = pygame.image.load(os.path.join(
-            os.path.split(__file__)[0],
-            './res/ball.png'
-        )
-        )
+        ball_img = pygame.image.load(
+                        os.path.join(
+                            os.path.split(__file__)[0],
+                            './res/ball.png'
+                        )
+                    )
         screen.blit(ball_img, (x, y))
 
     x, y = 50, 50
