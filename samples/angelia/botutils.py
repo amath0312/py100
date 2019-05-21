@@ -124,13 +124,6 @@ class PublishError(Exception):
 
 
 class MessageItem(object):
-    _guid = ''
-    _channel = ''
-    _title = ''
-    _update = ''
-    _desc = ''
-    _link = ''
-    _title = ''
 
     def __init__(self, guid, channel='', title='', update='', desc='', link=''):
         self._guid = guid

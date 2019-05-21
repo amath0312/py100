@@ -62,6 +62,7 @@ class Point(object):
 
     def __str__(self):
         return '(%s, %s)' % (str(self._x), str(self._y))
+    
 
 def main():
     # clock = Clock(23, 58, 15)
