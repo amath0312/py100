@@ -7,7 +7,8 @@ import qrcode
 import datetime
 import logging
 import botutils
-import ghtrending, osc
+import ghtrending
+import osc
 
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
@@ -18,9 +19,9 @@ def main():
             'token': "4044a4fe7a0437838d1003f3fb369367",
             'code': "f188414a716611e9a4ca3663a0d9922f"
         },
-        'osc':{
-            'code':'T34FYG',
-            'token':'8440bf8dd9683b3986a7bab5b7970af8'
+        'osc': {
+            'code': 'T34FYG',
+            'token': '8440bf8dd9683b3986a7bab5b7970af8'
         }
     }
     if len(sys.argv) > 1 and sys.argv[1] == 'console':
@@ -32,7 +33,7 @@ def main():
     else:
         ghtrending.GHTrending(config['ghtrending']).publish()
         osc.OSChina(config['osc']).publish()
-        
+
 
 def print_help(actions):
     for act in actions:
@@ -90,3 +91,4 @@ def test_bot(config):
 
 if __name__ == "__main__":
     main()
+    
