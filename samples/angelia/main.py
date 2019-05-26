@@ -5,6 +5,7 @@ import sys
 import pyqrcode
 import qrcode
 import datetime
+import multiprocessing
 import logging
 import botutils
 import ghtrending
@@ -31,8 +32,16 @@ def main():
             # config['code'], config['token'], 'only_for_test'))
         osc.OSChina(config['osc']).publish()
     else:
-        ghtrending.GHTrending(config['ghtrending']).publish()
-        osc.OSChina(config['osc']).publish()
+        start = time.time()
+        p1 = multiprocessing.Process(target=ghtrending.GHTrending(config['ghtrending']).publish, args=())
+        p2 = multiprocessing.Process(target=osc.OSChina(config['osc']).publish, args=())
+        p1.start()
+        p2.start()
+        p1.join()
+        p2.join()
+        end = time.time()
+        print('time:  %.2f s' % (end-start))
+
 
 
 def print_help(actions):
