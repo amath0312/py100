@@ -97,7 +97,7 @@ def get(url, headers=None, queries=None, resp_encoding='utf-8'):
     return resp_data
 
 
-def post(url, headers=None, data=None, resp_encoding='unicode_escape', timeout=30):
+def post(url:str, headers:dict=None, data:str=None, resp_encoding:str='unicode_escape', timeout:int=30)->str:
     """
     提交post请求
     :param url: 请求地址
