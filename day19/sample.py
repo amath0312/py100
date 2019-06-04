@@ -16,6 +16,9 @@ class Fib(object):
         self._num = 10
     
     def __iter__(self):
+        self._idx=0
+        self._a=0
+        self._b=1
         return self
 
     def __next__(self):
@@ -35,7 +38,10 @@ if __name__ == '__main__':
         if i > 20 :
             break
     
-    for n in Fib():
-        print(n)
+    fib_iter = Fib()
+    for n in fib_iter:
+        print('1 -', n)
 
+    for n in fib_iter:
+        print('2 -', n)
         
