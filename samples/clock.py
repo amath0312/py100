@@ -7,7 +7,7 @@ import time
 import tkinter
 
 
-class Clock():
+class Clock(object):
 
     def __init__(self, render=None):
         self._render = render
