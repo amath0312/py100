@@ -30,18 +30,36 @@ def main():
     elif len(sys.argv) > 1 and sys.argv[1] == 'test':
         # botutils.post('https://api.st.link/angelia/sendmessage/{}/{}/{}'.format(
             # config['code'], config['token'], 'only_for_test'))
-        osc.OSChina(config['osc']).publish()
+        # osc.OSChina(config['osc']).publish()
+        import json
+        for i in range(40000, 10**6):
+            try:
+                data = json.dumps({
+                    "userid": "emmm_"+str(i).rjust(10,'0'),
+                    "code": "ffddedc070d611e9a0253a8dfd6ffffa",
+                    "sign": True,
+                    "page": 0
+                })
+                print(data)
+                # ret = botutils.post(url='https://api.st.link/angelia/botshop',
+                # headers={"Content-Type": "application/json"}, data=data, resp_encoding='utf-8')
+                ret = botutils.post(url='https://api.st.link/angelia/follow',
+                                    headers={"Content-Type": "application/json"}, data=data, resp_encoding='utf-8')
+                print(json.loads(ret))
+            except:
+                print('error')
     else:
         start = time.time()
-        p1 = multiprocessing.Process(target=ghtrending.GHTrending(config['ghtrending']).publish, args=())
-        p2 = multiprocessing.Process(target=osc.OSChina(config['osc']).publish, args=())
+        p1 = multiprocessing.Process(target=ghtrending.GHTrending(
+            config['ghtrending']).publish, args=())
+        p2 = multiprocessing.Process(
+            target=osc.OSChina(config['osc']).publish, args=())
         p1.start()
         p2.start()
         p1.join()
         p2.join()
         end = time.time()
         print('time:  %.2f s' % (end-start))
-
 
 
 def print_help(actions):
@@ -100,4 +118,3 @@ def test_bot(config):
 
 if __name__ == "__main__":
     main()
-    
