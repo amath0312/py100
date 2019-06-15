@@ -1,0 +1,584 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABCMeta	../day18/salary_abstract.py	/^from abc import ABCMeta, abstractmethod$/;"	kind:namespace	line:2
+ABCMeta	../samples/angelia/botutils.py	/^from abc import ABCMeta, abstractmethod$/;"	kind:namespace	line:9
+AF_INET	../day14/sample.py	/^from socket import socket, AF_INET, SOCK_STREAM$/;"	kind:namespace	line:1
+Account	../day13/account.py	/^class Account(object):$/;"	kind:class	line:8
+Account	../day20/sample.py	/^class Account(object):$/;"	kind:class	line:7
+AddMoneyThread	../day13/account.py	/^class AddMoneyThread(Thread):$/;"	kind:class	line:27
+AddMoneyThread	../day20/sample.py	/^class AddMoneyThread(threading.Thread):$/;"	kind:class	line:23
+Asset	../samples/revenue.py	/^class Asset():$/;"	kind:class	line:7
+BLACK	../day10/pygame_demo.py	/^    BLACK = (0, 0, 0)$/;"	kind:variable	line:14
+BLUE	../day10/pygame_demo.py	/^    BLUE = (0, 0, 255)$/;"	kind:variable	line:13
+Ball	../day10/pygame_demo.py	/^class Ball(object):$/;"	kind:class	line:27
+BeautifulSoup	../samples/boc_atm.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:3
+Card	../day18/poke_enum.py	/^class Card(object):$/;"	kind:class	line:18
+Card	../day9/sample.py	/^class Card(object):$/;"	kind:class	line:6
+Clock	../day8/sample.py	/^class Clock(object):$/;"	kind:class	line:8
+Clock	../samples/clock.py	/^class Clock(object):$/;"	kind:class	line:10
+Color	../day10/pygame_demo.py	/^class Color(Enum):$/;"	kind:class	line:9
+DailyRobot	../samples/angelia/dailybot.py	/^class DailyRobot(botutils.Robot):$/;"	kind:class	line:10
+DownloadHandler	../day13/sample.py	/^    class DownloadHandler(Thread):$/;"	kind:class	line:11
+DownloadTask	../day13/thread.py	/^class DownloadTask(Thread):$/;"	kind:class	line:8
+Employee	../day18/salary_abstract.py	/^class Employee(metaclass=ABCMeta):$/;"	kind:class	line:8
+EmployeeFactory	../day18/salary_abstract.py	/^class EmployeeFactory(object):$/;"	kind:class	line:47
+Enum	../day10/pygame_demo.py	/^from enum import Enum, unique$/;"	kind:namespace	line:4
+Enum	../day18/poke_enum.py	/^from enum import Enum, unique$/;"	kind:namespace	line:2
+Fib	../day19/sample.py	/^class Fib(object):$/;"	kind:class	line:10
+Flask	../samples/sub_ssr.py	/^from flask import Flask$/;"	kind:namespace	line:6
+Foo	../day18/meta.py	/^class Foo(metaclass=Singleton):$/;"	kind:class	line:28
+GHTrending	../samples/angelia/ghtrending.py	/^class GHTrending(dailybot.DailyRobot):$/;"	kind:class	line:11
+GRAY	../day10/pygame_demo.py	/^    GRAY = (242, 242, 242)$/;"	kind:variable	line:16
+GREEN	../day10/pygame_demo.py	/^    GREEN = (0, 255, 0)$/;"	kind:variable	line:12
+Game	../day10/pygame_demo.py	/^class Game(object):$/;"	kind:class	line:70
+Image	../samples/qrcode.py	/^from PIL import Image$/;"	kind:namespace	line:3
+List	../samples/sha1.py	/^from typing import List$/;"	kind:namespace	line:5
+Lock	../day13/account.py	/^from threading import Thread, Lock$/;"	kind:namespace	line:5
+Lock	../day17/sample.py	/^from threading import Lock$/;"	kind:namespace	line:4
+Lock	../day18/meta.py	/^from threading import Lock$/;"	kind:namespace	line:2
+Manager	../day18/salary_abstract.py	/^class Manager(Employee):$/;"	kind:class	line:21
+MessageItem	../samples/angelia/botutils.py	/^class MessageItem(object):$/;"	kind:class	line:126
+MyDict	../day18/mixin.py	/^class MyDict(object):$/;"	kind:class	line:2
+OSChina	../samples/angelia/osc.py	/^class OSChina(dailybot.DailyRobot):$/;"	kind:class	line:11
+Partner	../samples/revenue.py	/^class Partner():$/;"	kind:class	line:33
+Player	../day18/poke_enum.py	/^class Player(object):$/;"	kind:class	line:60
+Point	../day8/sample.py	/^class Point(object):$/;"	kind:class	line:42
+Poker	../day18/poke_enum.py	/^class Poker(object):$/;"	kind:class	line:41
+Poker	../day9/sample.py	/^class Poker(object):$/;"	kind:class	line:36
+President	../day17/sample.py	/^class President(object):$/;"	kind:class	line:126
+Process	../day13/process.py	/^from multiprocessing import Process, Queue$/;"	kind:namespace	line:5
+Process	../day13/sample.py	/^from multiprocessing import Process, Queue$/;"	kind:namespace	line:7
+Process	../day14/sample.py	/^from multiprocessing import Process$/;"	kind:namespace	line:2
+Programmer	../day18/salary_abstract.py	/^class Programmer(Employee):$/;"	kind:class	line:29
+PublishError	../samples/angelia/botutils.py	/^class PublishError(Exception):$/;"	kind:class	line:116
+Queue	../day13/process.py	/^from multiprocessing import Process, Queue$/;"	kind:namespace	line:5
+Queue	../day13/sample.py	/^from multiprocessing import Process, Queue$/;"	kind:namespace	line:7
+RED	../day10/pygame_demo.py	/^    RED = (255, 0, 0)$/;"	kind:variable	line:11
+Record	../day17/sample.py	/^class Record(object):$/;"	kind:class	line:58
+Record2	../day17/sample.py	/^class Record2(object):$/;"	kind:class	line:88
+Robot	../samples/angelia/botutils.py	/^class Robot(object, metaclass=ABCMeta):$/;"	kind:class	line:13
+SOCK_STREAM	../day14/sample.py	/^from socket import socket, AF_INET, SOCK_STREAM$/;"	kind:namespace	line:1
+Salesman	../day18/salary_abstract.py	/^class Salesman(Employee):$/;"	kind:class	line:38
+ServerMessageHandler	../day14/sample.py	/^class ServerMessageHandler(Thread):$/;"	kind:class	line:6
+SetOnceAttrMixin	../day18/mixin.py	/^class SetOnceAttrMixin(object):$/;"	kind:class	line:17
+SetOnceDict	../day18/mixin.py	/^class SetOnceDict(SetOnceKeyMixin, dict):$/;"	kind:class	line:46
+SetOnceKeyMixin	../day18/mixin.py	/^class SetOnceKeyMixin(object):$/;"	kind:class	line:37
+SetOnceMyDict	../day18/mixin.py	/^class SetOnceMyDict(SetOnceAttrMixin, MyDict):$/;"	kind:class	line:33
+Singleton	../day18/meta.py	/^class Singleton(type):$/;"	kind:class	line:4
+Suite	../day18/poke_enum.py	/^class Suite(Enum):$/;"	kind:class	line:7
+Thing	../day16/algo_greedy.py	/^    class Thing(object):$/;"	kind:class	line:14
+Thread	../day13/account.py	/^from threading import Thread, Lock$/;"	kind:namespace	line:5
+Thread	../day13/sample.py	/^from threading import Thread$/;"	kind:namespace	line:6
+Thread	../day13/thread.py	/^from threading import Thread$/;"	kind:namespace	line:5
+Thread	../day14/sample.py	/^from threading import Thread$/;"	kind:namespace	line:3
+ThreadPoolExecutor	../day20/sample.py	/^from concurrent.futures import ThreadPoolExecutor$/;"	kind:namespace	line:4
+WHITE	../day10/pygame_demo.py	/^    WHITE = (255, 255, 255)$/;"	kind:variable	line:15
+__call__	../day17/sample.py	/^    def __call__(self, *args, **kwargs):$/;"	kind:member	line:92
+__call__	../day17/sample.py	/^    def __call__(self, func):$/;"	kind:member	line:62
+__call__	../day18/meta.py	/^    def __call__(cls, *args, **kwargs):$/;"	kind:member	line:18
+__daily_trending	../samples/angelia/ghtrending.py	/^    def __daily_trending(self):$/;"	kind:member	line:24
+__init__	../day10/pygame_demo.py	/^    def __init__(self):$/;"	kind:member	line:72
+__init__	../day10/pygame_demo.py	/^    def __init__(self, x, y, radius, sx, sy, color=Color.RED):$/;"	kind:member	line:29
+__init__	../day13/account.py	/^    def __init__(self):$/;"	kind:member	line:10
+__init__	../day13/account.py	/^    def __init__(self, account, money):$/;"	kind:member	line:29
+__init__	../day13/thread.py	/^    def __init__(self, filename):$/;"	kind:member	line:10
+__init__	../day14/sample.py	/^    def __init__(self, client, addr):$/;"	kind:member	line:7
+__init__	../day16/algo_greedy.py	/^        def __init__(self, name, price, weight):$/;"	kind:member	line:15
+__init__	../day17/sample.py	/^    def __init__(self, func):$/;"	kind:member	line:89
+__init__	../day17/sample.py	/^    def __init__(self, name):$/;"	kind:member	line:127
+__init__	../day17/sample.py	/^    def __init__(self, output):$/;"	kind:member	line:59
+__init__	../day18/meta.py	/^    def __init__(cls, *args, **kwargs):$/;"	kind:member	line:5
+__init__	../day18/mixin.py	/^    def __init__(self):$/;"	kind:member	line:5
+__init__	../day18/poke_enum.py	/^    def __init__(self):$/;"	kind:member	line:43
+__init__	../day18/poke_enum.py	/^    def __init__(self, name):$/;"	kind:member	line:61
+__init__	../day18/poke_enum.py	/^    def __init__(self, suite, face):$/;"	kind:member	line:22
+__init__	../day18/salary_abstract.py	/^    def __init__(self, name):$/;"	kind:member	line:22
+__init__	../day18/salary_abstract.py	/^    def __init__(self, name):$/;"	kind:member	line:9
+__init__	../day18/salary_abstract.py	/^    def __init__(self, name, sales):$/;"	kind:member	line:39
+__init__	../day18/salary_abstract.py	/^    def __init__(self, name, work_hour):$/;"	kind:member	line:30
+__init__	../day19/sample.py	/^    def __init__(self, num=10):$/;"	kind:member	line:12
+__init__	../day20/sample.py	/^    def __init__(self):$/;"	kind:member	line:10
+__init__	../day20/sample.py	/^    def __init__(self, account, money):$/;"	kind:member	line:26
+__init__	../day8/sample.py	/^    def __init__(self, hour=0, minute=0, second=0):$/;"	kind:member	line:13
+__init__	../day8/sample.py	/^    def __init__(self, x=0, y=0):$/;"	kind:member	line:45
+__init__	../day9/sample.py	/^    def __init__(self):$/;"	kind:member	line:38
+__init__	../day9/sample.py	/^    def __init__(self, suite, face):$/;"	kind:member	line:8
+__init__	../samples/angelia/botutils.py	/^    def __init__(self, config):$/;"	kind:member	line:15
+__init__	../samples/angelia/botutils.py	/^    def __init__(self, errcode, msg):$/;"	kind:member	line:118
+__init__	../samples/angelia/botutils.py	/^    def __init__(self, guid, channel='', title='', update='', desc='', link=''):$/;"	kind:member	line:128
+__init__	../samples/angelia/dailybot.py	/^    def __init__(self, config):$/;"	kind:member	line:13
+__init__	../samples/angelia/ghtrending.py	/^    def __init__(self, config):$/;"	kind:member	line:14
+__init__	../samples/angelia/osc.py	/^    def __init__(self, config):$/;"	kind:member	line:16
+__init__	../samples/clock.py	/^    def __init__(self, render=None):$/;"	kind:member	line:12
+__init__	../samples/revenue.py	/^    def __init__(self):$/;"	kind:member	line:35
+__init__	../samples/revenue.py	/^    def __init__(self):$/;"	kind:member	line:9
+__iter__	../day19/sample.py	/^    def __iter__(self):$/;"	kind:member	line:18
+__lt__	../day18/poke_enum.py	/^    def __lt__(self, other):$/;"	kind:member	line:12
+__new__	../day18/meta.py	/^    def __new__(cls, name,bases,attrs):$/;"	kind:member	line:12
+__next__	../day19/sample.py	/^    def __next__(self):$/;"	kind:member	line:24
+__repr__	../day16/algo_greedy.py	/^        def __repr__(self):$/;"	kind:member	line:26
+__repr__	../day18/poke_enum.py	/^    def __repr__(self):$/;"	kind:member	line:37
+__repr__	../samples/angelia/botutils.py	/^    def __repr__(self):$/;"	kind:member	line:197
+__repr__	../samples/revenue.py	/^    def __repr__(self):$/;"	kind:member	line:29
+__setattr__	../day18/mixin.py	/^    def __setattr__(self, name, value):$/;"	kind:member	line:11
+__setattr__	../day18/mixin.py	/^    def __setattr__(self, name, value):$/;"	kind:member	line:26
+__setitem__	../day18/mixin.py	/^    def __setitem__(self, key, value):$/;"	kind:member	line:40
+__slots__	../day18/mixin.py	/^    __slots__ = ('a', 'b', 'c')$/;"	kind:variable	line:3
+__str__	../day16/algo_greedy.py	/^        def __str__(self):$/;"	kind:member	line:24
+__str__	../day18/poke_enum.py	/^    def __str__(self):$/;"	kind:member	line:34
+__str__	../day8/sample.py	/^    def __str__(self):$/;"	kind:member	line:63
+__str__	../day9/sample.py	/^    def __str__(self):$/;"	kind:member	line:24
+__str__	../samples/angelia/botutils.py	/^    def __str__(self):$/;"	kind:member	line:122
+__str__	../samples/angelia/botutils.py	/^    def __str__(self):$/;"	kind:member	line:184
+__str__	../samples/revenue.py	/^    def __str__(self):$/;"	kind:member	line:18
+__to_msg	../samples/angelia/ghtrending.py	/^    def __to_msg(self, item):$/;"	kind:member	line:59
+_ad_revenue	../samples/revenue.py	/^    def _ad_revenue(self, device_cnt, year):$/;"	kind:member	line:125
+_buy_product	../samples/revenue.py	/^    def _buy_product(self):$/;"	kind:member	line:84
+_config_path	../samples/angelia/botutils.py	/^    def _config_path(self):$/;"	kind:member	line:76
+_crawl	../samples/angelia/botutils.py	/^    def _crawl(self):$/;"	kind:member	line:72
+_crawl	../samples/angelia/ghtrending.py	/^    def _crawl(self):$/;"	kind:member	line:17
+_crawl	../samples/angelia/osc.py	/^    def _crawl(self):$/;"	kind:member	line:20
+_invest	../samples/revenue.py	/^    def _invest(self, device_cnt):$/;"	kind:member	line:78
+_news	../samples/angelia/osc.py	/^    def _news(self):$/;"	kind:member	line:24
+_page_to_items	../samples/angelia/osc.py	/^    def _page_to_items(self, url):$/;"	kind:member	line:40
+_partition	../day16/algo_sort.py	/^def _partition(items, start, end, cmp):$/;"	kind:function	line:108
+_product_revenue	../samples/revenue.py	/^    def _product_revenue(self, device_cnt, year):$/;"	kind:member	line:120
+_quick_sort2	../day16/algo_sort.py	/^def _quick_sort2(items, start, end, cmp):$/;"	kind:function	line:101
+_rend_timer	../samples/clock.py	/^    def _rend_timer(start, end):$/;"	kind:member	line:55
+_sell_ad	../samples/revenue.py	/^    def _sell_ad(self):$/;"	kind:member	line:73
+_sell_product	../samples/revenue.py	/^    def _sell_product(self):$/;"	kind:member	line:67
+_sha1	../samples/sha1.py	/^def _sha1(param:dict)->str:$/;"	kind:function	line:37
+_timer_tick	../samples/clock.py	/^    def _timer_tick(clock):$/;"	kind:member	line:41
+abstractmethod	../day18/salary_abstract.py	/^from abc import ABCMeta, abstractmethod$/;"	kind:namespace	line:2
+abstractmethod	../samples/angelia/botutils.py	/^from abc import ABCMeta, abstractmethod$/;"	kind:namespace	line:9
+account.py	../day13/account.py	1;"	kind:file	line:1
+account_lock	../day13/account.py	/^def account_lock():$/;"	kind:function	line:37
+algo_enum.py	../day16/algo_enum.py	1;"	kind:file	line:1
+algo_greedy.py	../day16/algo_greedy.py	1;"	kind:file	line:1
+algo_search.py	../day16/algo_search.py	1;"	kind:file	line:1
+algo_sort.py	../day16/algo_sort.py	1;"	kind:file	line:1
+alive	../day10/pygame_demo.py	/^    def alive(self):$/;"	kind:member	line:39
+alive	../day10/pygame_demo.py	/^    def alive(self, alive):$/;"	kind:member	line:43
+app	../samples/sub_ssr.py	/^app = Flask(__name__)$/;"	kind:variable	line:8
+arrange	../day9/sample.py	/^    def arrange(cards, key):$/;"	kind:member	line:78
+b64encode	../samples/sha1.py	/^from base64 import b64encode$/;"	kind:namespace	line:8
+balance	../day13/account.py	/^    def balance(self):$/;"	kind:member	line:24
+banks	../samples/boc_atm.py	/^    banks = soup.select('#documentContainer')[0].get_text()$/;"	kind:variable	line:19
+base64	../samples/qrcode.py	/^import base64$/;"	kind:namespace	line:5
+base64	../samples/sub_ssr.py	/^import base64$/;"	kind:namespace	line:5
+baseurl	../samples/boc_atm.py	/^baseurl = 'http:\/\/www.bankofchina.com\/sourcedb\/atmdist\/406\/678\/681\/index%s.html'$/;"	kind:variable	line:5
+bin_search	../day16/algo_search.py	/^def bin_search(sorted_items, key):$/;"	kind:function	line:11
+board_game	../day7/sample.py	/^def board_game():$/;"	kind:function	line:128
+boc_atm.py	../samples/boc_atm.py	1;"	kind:file	line:1
+bot_publish	../samples/angelia/botutils.py	/^    def bot_publish(self, message, link=''):$/;"	kind:member	line:58
+botutils	../samples/angelia/dailybot.py	/^import botutils$/;"	kind:namespace	line:3
+botutils	../samples/angelia/ghtrending.py	/^import botutils$/;"	kind:namespace	line:4
+botutils	../samples/angelia/main.py	/^import botutils$/;"	kind:namespace	line:10
+botutils	../samples/angelia/osc.py	/^import botutils$/;"	kind:namespace	line:4
+botutils.py	../samples/angelia/botutils.py	1;"	kind:file	line:1
+bs4	../samples/angelia/botutils.py	/^import bs4$/;"	kind:namespace	line:5
+bs4	../samples/angelia/dailybot.py	/^import bs4$/;"	kind:namespace	line:5
+bs4	../samples/angelia/ghtrending.py	/^import bs4$/;"	kind:namespace	line:6
+bs4	../samples/angelia/osc.py	/^import bs4$/;"	kind:namespace	line:6
+bs4	../samples/mybot.py	/^import bs4$/;"	kind:namespace	line:5
+bubble_sort	../day16/algo_sort.py	/^def bubble_sort(items, cmp=lambda x, y: x > y):$/;"	kind:function	line:4
+calc_area	../day2/sample.py	/^def calc_area(radius):$/;"	kind:function	line:25
+calc_perimeter	../day2/sample.py	/^def calc_perimeter(radius):$/;"	kind:function	line:18
+cards	../day9/sample.py	/^    def cards(self):$/;"	kind:member	line:46
+celsius_to_fahrenheit	../day2/sample.py	/^def celsius_to_fahrenheit(celsius):$/;"	kind:function	line:4
+change_label_msg	../day10/sample.py	/^    def change_label_msg():$/;"	kind:function	line:9
+channel	../samples/angelia/botutils.py	/^    def channel(self):$/;"	kind:member	line:145
+channel	../samples/angelia/botutils.py	/^    def channel(self, channel):$/;"	kind:member	line:149
+chicken	../day5/sample.py	/^def chicken():$/;"	kind:function	line:35
+client	../day14/sample.py	/^def client():$/;"	kind:function	line:31
+clock.py	../samples/clock.py	1;"	kind:file	line:1
+clock_gui	../samples/clock.py	/^def clock_gui():$/;"	kind:function	line:83
+clock_term	../samples/clock.py	/^def clock_term(max=-1):$/;"	kind:function	line:76
+collections	../day16/sample.py	/^    import collections$/;"	kind:namespace	line:72
+config	../samples/mybot.py	/^    config = {$/;"	kind:variable	line:165
+confirm_to_quit	../day10/sample.py	/^    def confirm_to_quit():$/;"	kind:function	line:17
+cost	../samples/revenue.py	/^    def cost(self, device_cnt, year):$/;"	kind:member	line:98
+craps	../day5/sample.py	/^def craps():$/;"	kind:function	line:49
+create	../day18/salary_abstract.py	/^    def create(emp_type, *args, **kwargs):$/;"	kind:member	line:49
+create_ball	../day10/pygame_demo.py	/^    def create_ball(self, x, y):$/;"	kind:member	line:76
+d	../day18/mixin.py	/^    d = SetOnceMyDict()$/;"	kind:variable	line:51
+dailybot	../samples/angelia/ghtrending.py	/^import dailybot$/;"	kind:namespace	line:3
+dailybot	../samples/angelia/osc.py	/^import dailybot$/;"	kind:namespace	line:3
+dailybot.py	../samples/angelia/dailybot.py	1;"	kind:file	line:1
+data	../samples/boc_atm.py	/^    data = resp.read().decode('utf-8')$/;"	kind:variable	line:17
+data	../samples/qrcode.py	/^        data = data[6:data.find('#')]$/;"	kind:variable	line:40
+data	../samples/qrcode.py	/^    data = decode(file)$/;"	kind:variable	line:48
+data	../samples/qrcode.py	/^    data = decode(file)[0]$/;"	kind:variable	line:37
+datetime	../samples/angelia/dailybot.py	/^import datetime$/;"	kind:namespace	line:4
+datetime	../samples/angelia/ghtrending.py	/^import datetime$/;"	kind:namespace	line:5
+datetime	../samples/angelia/main.py	/^import datetime$/;"	kind:namespace	line:7
+datetime	../samples/angelia/osc.py	/^import datetime$/;"	kind:namespace	line:5
+datetime	../samples/mybot.py	/^import datetime$/;"	kind:namespace	line:12
+deal	../day18/poke_enum.py	/^    def deal(self):$/;"	kind:member	line:51
+deal	../day9/sample.py	/^    def deal(self, group):$/;"	kind:member	line:52
+dealed	../day9/sample.py	/^    dealed = poker.deal(4)$/;"	kind:variable	line:86
+decode	../samples/qrcode.py	/^def decode(file_path):$/;"	kind:function	line:13
+decorate	../day17/sample.py	/^    def decorate(func):$/;"	kind:function	line:33
+deepcopy	../samples/revenue.py	/^from copy import deepcopy$/;"	kind:namespace	line:4
+deposit	../day13/account.py	/^    def deposit(self, money):$/;"	kind:member	line:14
+deposit	../day20/sample.py	/^    def deposit(self, money):$/;"	kind:member	line:14
+desc	../samples/angelia/botutils.py	/^    def desc(self):$/;"	kind:member	line:177
+desc	../samples/angelia/botutils.py	/^    def desc(self, desc):$/;"	kind:member	line:181
+display	../day7/sample.py	/^def display(balls):$/;"	kind:function	line:82
+display	../day8/sample.py	/^    def display(self):$/;"	kind:member	line:37
+display	../day9/sample.py	/^    def display(self):$/;"	kind:member	line:68
+display_board	../day7/sample.py	/^def display_board(board):$/;"	kind:function	line:119
+display_cards	../day9/sample.py	/^    def display_cards(cards):$/;"	kind:member	line:72
+distance_to	../day8/sample.py	/^    def distance_to(self, p2):$/;"	kind:member	line:60
+download	../day13/sample.py	/^    def download():$/;"	kind:function	line:18
+download	../day13/sample.py	/^def download():$/;"	kind:function	line:10
+download_file	../day13/process.py	/^def download_file(filename):$/;"	kind:function	line:30
+download_file	../day13/thread.py	/^def download_file(filename):$/;"	kind:function	line:44
+download_muilt_process	../day13/process.py	/^def download_muilt_process():$/;"	kind:function	line:18
+download_muilt_thread	../day13/thread.py	/^def download_muilt_thread():$/;"	kind:function	line:32
+download_multi_thread2	../day13/thread.py	/^def download_multi_thread2():$/;"	kind:function	line:20
+download_sigle_process	../day13/process.py	/^def download_sigle_process():$/;"	kind:function	line:10
+draw	../day10/pygame_demo.py	/^    def draw(self, screen):$/;"	kind:member	line:56
+draw_ball	../day10/pygame_demo.py	/^    def draw_ball():$/;"	kind:function	line:130
+draw_balls	../day10/pygame_demo.py	/^    def draw_balls(self):$/;"	kind:member	line:84
+eat	../day10/pygame_demo.py	/^    def eat(self, other):$/;"	kind:member	line:61
+enhanced_image	../samples/qrcode.py	/^def enhanced_image(file_path):$/;"	kind:function	line:20
+f1	../day17/sample.py	/^def f1(*args):$/;"	kind:function	line:23
+f2	../day17/sample.py	/^def f2(*args):$/;"	kind:function	line:48
+f3	../day17/sample.py	/^def f3(*args):$/;"	kind:function	line:78
+f4	../day17/sample.py	/^def f4(*args):$/;"	kind:function	line:101
+face	../day18/poke_enum.py	/^    def face(self):$/;"	kind:member	line:31
+face	../day9/sample.py	/^    def face(self):$/;"	kind:member	line:21
+face_char	../day18/poke_enum.py	/^    face_char = ['', 'A'] + [str(n) for n in range(2, 11)] + ['J', 'Q', 'K']$/;"	kind:variable	line:20
+factorial	../day6/sample.py	/^def factorial(num):$/;"	kind:function	line:2
+fahrenheit_to_celsius	../day2/sample.py	/^def fahrenheit_to_celsius(fah):$/;"	kind:function	line:11
+fib	../day16/sample.py	/^def fib(num, temp={}):$/;"	kind:function	line:86
+fib	../day19/sample.py	/^def fib(num):$/;"	kind:function	line:3
+fib	../day7/sample.py	/^def fib(n):$/;"	kind:function	line:22
+fib_iter	../day19/sample.py	/^    fib_iter = Fib()$/;"	kind:variable	line:41
+fib_iter	../day19/sample.py	/^    fib_iter = fib(5)$/;"	kind:variable	line:32
+fibonacci	../day5/sample.py	/^def fibonacci(count):$/;"	kind:function	line:42
+figure_assets	../samples/revenue.py	/^def figure_assets(device_cnt, year):$/;"	kind:function	line:162
+figure_by_count	../samples/revenue.py	/^def figure_by_count(year):$/;"	kind:function	line:131
+figure_by_year	../samples/revenue.py	/^def figure_by_year(count):$/;"	kind:function	line:147
+file	../samples/qrcode.py	/^    file = '\/Users\/zhaolin\/Desktop\/c.jpeg'$/;"	kind:variable	line:36
+file	../samples/qrcode.py	/^    file = '\/Users\/zhaolin\/Desktop\/nasa-3.jpeg'$/;"	kind:variable	line:47
+find_narcissistic	../day5/sample.py	/^def find_narcissistic(m):$/;"	kind:function	line:6
+find_perfect	../day5/sample.py	/^def find_perfect(high):$/;"	kind:function	line:19
+foo	../day6/mod1.py	/^def foo():$/;"	kind:function	line:1
+foo	../day6/mod2.py	/^def foo():$/;"	kind:function	line:1
+foo	../day6/sample.py	/^    from mod1 import foo$/;"	kind:namespace	line:31
+foo	../day6/sample.py	/^def foo():$/;"	kind:function	line:23
+foo	../day6/sample.py	/^def foo():$/;"	kind:function	line:26
+get	../samples/angelia/botutils.py	/^def get(url, headers=None, queries=None, resp_encoding='utf-8'):$/;"	kind:function	line:80
+get_card	../day18/poke_enum.py	/^    def get_card(self, card):$/;"	kind:member	line:69
+get_salary	../day18/salary_abstract.py	/^    def get_salary(self):$/;"	kind:member	line:17
+get_salary	../day18/salary_abstract.py	/^    def get_salary(self):$/;"	kind:member	line:25
+get_salary	../day18/salary_abstract.py	/^    def get_salary(self):$/;"	kind:member	line:34
+get_salary	../day18/salary_abstract.py	/^    def get_salary(self):$/;"	kind:member	line:43
+get_sub_ssr	../samples/sub_ssr.py	/^def get_sub_ssr(url):$/;"	kind:function	line:18
+get_suffix	../day7/sample.py	/^def get_suffix(filename, has_dot=False):$/;"	kind:function	line:47
+getpid	../day13/process.py	/^from os import getpid$/;"	kind:namespace	line:6
+ghtrending	../samples/angelia/main.py	/^import ghtrending$/;"	kind:namespace	line:11
+ghtrending.py	../samples/angelia/ghtrending.py	1;"	kind:file	line:1
+github_daily_trending	../samples/mybot.py	/^def github_daily_trending():$/;"	kind:function	line:115
+greatest_common_divisor	../day6/sample.py	/^def greatest_common_divisor(x, y):$/;"	kind:function	line:39
+gui_main	../day10/sample.py	/^def gui_main():$/;"	kind:function	line:6
+guid	../samples/angelia/botutils.py	/^    def guid(self):$/;"	kind:member	line:137
+guid	../samples/angelia/botutils.py	/^    def guid(self, guid):$/;"	kind:member	line:141
+has_next	../day18/poke_enum.py	/^    def has_next(self):$/;"	kind:member	line:56
+hashlib	../samples/sha1.py	/^import hashlib$/;"	kind:namespace	line:7
+heapq	../day16/sample.py	/^    import heapq$/;"	kind:namespace	line:45
+heartbeat	../samples/angelia/botutils.py	/^    def heartbeat(self):$/;"	kind:member	line:50
+heartbeat	../samples/mybot.py	/^def heartbeat(code):$/;"	kind:function	line:40
+how_many_fishes	../day16/algo_enum.py	/^def how_many_fishes():$/;"	kind:function	line:3
+in_bank	../samples/boc_atm.py	/^    in_bank = in_bank + banks.count('依附')$/;"	kind:variable	line:21
+in_bank	../samples/boc_atm.py	/^in_bank = 0$/;"	kind:variable	line:7
+is_leap_year	../day2/sample.py	/^def is_leap_year(year):$/;"	kind:function	line:32
+is_palindrome	../day6/sample.py	/^def is_palindrome(num):$/;"	kind:function	line:52
+is_prime	../day3/sample.py	/^def is_prime(num):$/;"	kind:function	line:3
+is_today_published	../samples/angelia/dailybot.py	/^    def is_today_published(self):$/;"	kind:member	line:25
+itertools	../day16/sample.py	/^    import itertools$/;"	kind:namespace	line:61
+json	../samples/angelia/botutils.py	/^import json$/;"	kind:namespace	line:7
+json	../samples/angelia/main.py	/^        import json$/;"	kind:namespace	line:34
+json	../samples/mybot.py	/^import json$/;"	kind:namespace	line:7
+least_common_multiple	../day6/sample.py	/^def least_common_multiple(x, y):$/;"	kind:function	line:49
+link	../samples/angelia/botutils.py	/^    def link(self):$/;"	kind:member	line:169
+link	../samples/angelia/botutils.py	/^    def link(self, link):$/;"	kind:member	line:173
+list_in_list	../day16/sample.py	/^def list_in_list():$/;"	kind:function	line:26
+listen	../samples/clock.py	/^def listen():$/;"	kind:function	line:69
+logging	../samples/angelia/botutils.py	/^import logging$/;"	kind:namespace	line:10
+logging	../samples/angelia/dailybot.py	/^import logging$/;"	kind:namespace	line:6
+logging	../samples/angelia/ghtrending.py	/^import logging$/;"	kind:namespace	line:7
+logging	../samples/angelia/main.py	/^import logging$/;"	kind:namespace	line:9
+logging	../samples/angelia/osc.py	/^import logging$/;"	kind:namespace	line:7
+logging	../samples/mybot.py	/^import logging$/;"	kind:namespace	line:13
+lucky_man	../day7/sample.py	/^def lucky_man():$/;"	kind:function	line:97
+m1	../day6/sample.py	/^    import mod1 as m1$/;"	kind:namespace	line:34
+m2	../day6/sample.py	/^    import mod2 as m2$/;"	kind:namespace	line:35
+main	../day10/pygame_demo.py	/^def main():$/;"	kind:function	line:120
+main	../day12/sample.py	/^def main():$/;"	kind:function	line:73
+main	../day13/process.py	/^def main():$/;"	kind:function	line:56
+main	../day13/sample.py	/^def main():$/;"	kind:function	line:69
+main	../day13/thread.py	/^def main():$/;"	kind:function	line:51
+main	../day14/sample.py	/^def main():$/;"	kind:function	line:38
+main	../day16/algo_enum.py	/^def main():$/;"	kind:function	line:24
+main	../day16/algo_search.py	/^def main():$/;"	kind:function	line:25
+main	../day16/algo_sort.py	/^def main():$/;"	kind:function	line:119
+main	../day16/sample.py	/^def main():$/;"	kind:function	line:152
+main	../day17/sample.py	/^def main():$/;"	kind:function	line:146
+main	../day18/meta.py	/^def main():$/;"	kind:function	line:31
+main	../day18/poke_enum.py	/^def main():$/;"	kind:function	line:81
+main	../day18/salary_abstract.py	/^def main():$/;"	kind:function	line:62
+main	../day20/sample.py	/^def main():$/;"	kind:function	line:36
+main	../day6/sample.py	/^def main():$/;"	kind:function	line:57
+main	../day7/sample.py	/^def main():$/;"	kind:function	line:153
+main	../day8/sample.py	/^def main():$/;"	kind:function	line:67
+main	../samples/angelia/main.py	/^def main():$/;"	kind:function	line:17
+main	../samples/revenue.py	/^def main():$/;"	kind:function	line:205
+main.py	../samples/angelia/main.py	1;"	kind:file	line:1
+main_game	../day10/pygame_demo.py	/^def main_game():$/;"	kind:function	line:116
+mark_today_published	../samples/angelia/dailybot.py	/^    def mark_today_published(self):$/;"	kind:member	line:34
+math	../day2/sample.py	/^import math$/;"	kind:namespace	line:1
+math	../day3/sample.py	/^import math$/;"	kind:namespace	line:1
+math	../day5/sample.py	/^import math$/;"	kind:namespace	line:2
+math	../day8/sample.py	/^import math$/;"	kind:namespace	line:41
+matplotlib	../samples/revenue.py	/^import matplotlib$/;"	kind:namespace	line:2
+matplotlib	../samples/revenue.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:3
+max	../samples/clock.py	/^            max = int(sys.argv[2].strip())$/;"	kind:variable	line:120
+max	../samples/clock.py	/^        max = -1$/;"	kind:variable	line:118
+max2	../day7/sample.py	/^def max2(lst):$/;"	kind:function	line:62
+max_subset	../day16/sample.py	/^def max_subset(items):$/;"	kind:function	line:101
+merge_sort	../day16/algo_sort.py	/^def merge_sort(items, cmp=lambda x, y: x > y):$/;"	kind:function	line:30
+messagebox	../day10/sample.py	/^from tkinter import messagebox$/;"	kind:namespace	line:4
+messagebox	../day13/sample.py	/^import tkinter.messagebox$/;"	kind:namespace	line:4
+meta.py	../day18/meta.py	1;"	kind:file	line:1
+mixin.py	../day18/mixin.py	1;"	kind:file	line:1
+mod1.py	../day6/mod1.py	1;"	kind:file	line:1
+mod2.py	../day6/mod2.py	1;"	kind:file	line:1
+monthly_asset	../samples/revenue.py	/^    def monthly_asset(self, device_cnt, year=3):$/;"	kind:member	line:47
+move	../day10/pygame_demo.py	/^    def move(self, screen):$/;"	kind:member	line:46
+move_balls	../day10/pygame_demo.py	/^    def move_balls(self):$/;"	kind:member	line:88
+move_by	../day8/sample.py	/^    def move_by(self, dx, dy):$/;"	kind:member	line:55
+move_to	../day8/sample.py	/^    def move_to(self, x, y):$/;"	kind:member	line:50
+multiprocessing	../samples/angelia/main.py	/^import multiprocessing$/;"	kind:namespace	line:8
+mybot.py	../samples/mybot.py	1;"	kind:file	line:1
+name	../day18/poke_enum.py	/^    def name(self):$/;"	kind:member	line:66
+name	../day18/salary_abstract.py	/^    def name(self):$/;"	kind:member	line:13
+os	../day10/pygame_demo.py	/^import os$/;"	kind:namespace	line:1
+os	../day7/sample.py	/^import os$/;"	kind:namespace	line:4
+os	../day8/sample.py	/^import os$/;"	kind:namespace	line:4
+os	../day9/sample.py	/^import os$/;"	kind:namespace	line:4
+os	../samples/angelia/botutils.py	/^import os$/;"	kind:namespace	line:8
+os	../samples/angelia/dailybot.py	/^import os$/;"	kind:namespace	line:7
+os	../samples/angelia/ghtrending.py	/^import os$/;"	kind:namespace	line:8
+os	../samples/angelia/osc.py	/^import os$/;"	kind:namespace	line:8
+os	../samples/clock.py	/^import os$/;"	kind:namespace	line:3
+os	../samples/qrcode.py	/^import os$/;"	kind:namespace	line:2
+os	../samples/sha1.py	/^import os$/;"	kind:namespace	line:4
+osc	../samples/angelia/main.py	/^import osc$/;"	kind:namespace	line:12
+osc.py	../samples/angelia/osc.py	1;"	kind:file	line:1
+out_bank	../samples/boc_atm.py	/^    out_bank = out_bank + banks.count('离行')$/;"	kind:variable	line:22
+out_bank	../samples/boc_atm.py	/^out_bank = 0$/;"	kind:variable	line:8
+parse	../day14/parse_url.py	/^def parse(url):$/;"	kind:function	line:6
+parse_args	../samples/sha1.py	/^def parse_args(args: List[str])->dict:$/;"	kind:function	line:11
+parse_url.py	../day14/parse_url.py	1;"	kind:file	line:1
+parse_version_data	../day1/sample.py	/^def parse_version_data(keyword, data, line_size):$/;"	kind:function	line:21
+pickup_tels1	../day12/sample.py	/^def pickup_tels1(sentence):$/;"	kind:function	line:40
+pickup_tels2	../day12/sample.py	/^def pickup_tels2(sentence):$/;"	kind:function	line:47
+ping_pong	../day13/process.py	/^def ping_pong():$/;"	kind:function	line:37
+ping_pong_sub_task	../day13/process.py	/^def ping_pong_sub_task(string, queue):$/;"	kind:function	line:49
+plt	../samples/revenue.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:3
+poke_enum.py	../day18/poke_enum.py	1;"	kind:file	line:1
+poker	../day9/sample.py	/^    poker = Poker()$/;"	kind:variable	line:83
+post	../samples/angelia/botutils.py	/^def post(url:str, headers:dict=None, data:str=None, resp_encoding:str='unicode_escape', timeout:int=30)->str:$/;"	kind:function	line:100
+post	../samples/mybot.py	/^def post(url, json_data=None):$/;"	kind:function	line:18
+post_to_bot	../samples/angelia/botutils.py	/^    def post_to_bot(self, url, data=None):$/;"	kind:member	line:32
+print_help	../samples/angelia/main.py	/^def print_help(actions):$/;"	kind:function	line:65
+print_help	../samples/mybot.py	/^def print_help(actions):$/;"	kind:function	line:61
+print_version_data	../day1/sample.py	/^def print_version_data():$/;"	kind:function	line:8
+process.py	../day13/process.py	1;"	kind:file	line:1
+profit	../samples/revenue.py	/^    def profit(self, device_cnt, year):$/;"	kind:member	line:113
+publish	../samples/angelia/botutils.py	/^    def publish(self):$/;"	kind:member	line:19
+publish	../samples/angelia/dailybot.py	/^    def publish(self):$/;"	kind:member	line:18
+publish	../samples/mybot.py	/^def publish(code, token, message, link=''):$/;"	kind:function	line:48
+purify	../day12/sample.py	/^def purify(sentence):$/;"	kind:function	line:63
+pygame	../day10/pygame_demo.py	/^import pygame$/;"	kind:namespace	line:5
+pygame_demo.py	../day10/pygame_demo.py	1;"	kind:file	line:1
+pyqrcode	../samples/angelia/main.py	/^import pyqrcode$/;"	kind:namespace	line:5
+pyqrcode	../samples/mybot.py	/^import pyqrcode$/;"	kind:namespace	line:10
+pyzbar	../samples/qrcode.py	/^from pyzbar import pyzbar$/;"	kind:namespace	line:4
+qrcode	../samples/angelia/main.py	/^import qrcode$/;"	kind:namespace	line:6
+qrcode	../samples/mybot.py	/^import qrcode$/;"	kind:namespace	line:11
+qrcode.py	../samples/qrcode.py	1;"	kind:file	line:1
+quick_sort	../day16/algo_sort.py	/^def quick_sort(items, cmp=lambda x, y: x > y):$/;"	kind:function	line:69
+quick_sort2	../day16/algo_sort.py	/^def quick_sort2(items, cmp=lambda x, y: x > y):$/;"	kind:function	line:94
+quote	../day14/parse_url.py	/^from urllib.parse import quote$/;"	kind:namespace	line:3
+quote	../samples/angelia/botutils.py	/^from urllib.parse import urlencode, quote$/;"	kind:namespace	line:4
+quote	../samples/mybot.py	/^from urllib.parse import urlencode, quote$/;"	kind:namespace	line:4
+randint	../day10/pygame_demo.py	/^from random import randint$/;"	kind:namespace	line:2
+randint	../day16/algo_search.py	/^from random import shuffle, randint$/;"	kind:namespace	line:1
+randint	../day16/sample.py	/^from random import randint$/;"	kind:namespace	line:2
+random	../day1/sample.py	/^    import random$/;"	kind:namespace	line:35
+random	../day13/account.py	/^import random$/;"	kind:namespace	line:4
+random	../day13/process.py	/^import random$/;"	kind:namespace	line:4
+random	../day13/thread.py	/^import random$/;"	kind:namespace	line:4
+random	../day16/algo_sort.py	/^import random$/;"	kind:namespace	line:1
+random	../day18/poke_enum.py	/^import random$/;"	kind:namespace	line:3
+random	../day5/sample.py	/^import random$/;"	kind:namespace	line:3
+random	../day7/sample.py	/^import random$/;"	kind:namespace	line:6
+random	../day9/sample.py	/^import random$/;"	kind:namespace	line:3
+random_choose_balls	../day7/sample.py	/^def random_choose_balls():$/;"	kind:function	line:90
+random_color	../day10/pygame_demo.py	/^    def random_color():$/;"	kind:member	line:19
+re	../day12/sample.py	/^import re$/;"	kind:namespace	line:2
+re	../samples/sha1.py	/^import re$/;"	kind:namespace	line:6
+record	../day17/sample.py	/^def record(output):$/;"	kind:function	line:32
+record_time	../day17/sample.py	/^def record_time(func):$/;"	kind:function	line:9
+render	../samples/clock.py	/^    def render(self):$/;"	kind:member	line:19
+render	../samples/clock.py	/^    def render(self, render):$/;"	kind:member	line:23
+repack	../samples/sub_ssr.py	/^def repack(ssr_list):$/;"	kind:function	line:23
+req	../samples/boc_atm.py	/^    req = request.Request(url)$/;"	kind:variable	line:15
+request	../samples/angelia/botutils.py	/^from urllib import request$/;"	kind:namespace	line:3
+request	../samples/boc_atm.py	/^import urllib.request as request$/;"	kind:namespace	line:2
+request	../samples/mybot.py	/^from urllib import request$/;"	kind:namespace	line:3
+requests	../samples/sub_ssr.py	/^import requests$/;"	kind:namespace	line:4
+resp	../samples/boc_atm.py	/^    resp = request.urlopen(req, timeout=100)$/;"	kind:variable	line:16
+result	../samples/mybot.py	/^        result = github_daily_trending()$/;"	kind:variable	line:175
+revenue	../samples/revenue.py	/^    def revenue(self, device_cnt, year):$/;"	kind:member	line:108
+revenue.py	../samples/revenue.py	1;"	kind:file	line:1
+roi	../samples/revenue.py	/^    def roi(self, device_cnt, year):$/;"	kind:member	line:117
+run	../day13/account.py	/^    def run(self):$/;"	kind:member	line:34
+run	../day13/sample.py	/^        def run(self):$/;"	kind:member	line:13
+run	../day13/thread.py	/^    def run(self):$/;"	kind:member	line:14
+run	../day14/sample.py	/^    def run(self):$/;"	kind:member	line:11
+run	../day20/sample.py	/^    def run(self):$/;"	kind:member	line:32
+run_loop	../day7/sample.py	/^def run_loop(text):$/;"	kind:function	line:29
+safe_b64decode	../samples/sub_ssr.py	/^def safe_b64decode(data):$/;"	kind:function	line:14
+salary_abstract.py	../day18/salary_abstract.py	1;"	kind:file	line:1
+sample.py	../day1/sample.py	1;"	kind:file	line:1
+sample.py	../day10/sample.py	1;"	kind:file	line:1
+sample.py	../day12/sample.py	1;"	kind:file	line:1
+sample.py	../day13/sample.py	1;"	kind:file	line:1
+sample.py	../day14/sample.py	1;"	kind:file	line:1
+sample.py	../day16/sample.py	1;"	kind:file	line:1
+sample.py	../day17/sample.py	1;"	kind:file	line:1
+sample.py	../day19/sample.py	1;"	kind:file	line:1
+sample.py	../day2/sample.py	1;"	kind:file	line:1
+sample.py	../day20/sample.py	1;"	kind:file	line:1
+sample.py	../day3/sample.py	1;"	kind:file	line:1
+sample.py	../day5/sample.py	1;"	kind:file	line:1
+sample.py	../day6/sample.py	1;"	kind:file	line:1
+sample.py	../day7/sample.py	1;"	kind:file	line:1
+sample.py	../day8/sample.py	1;"	kind:file	line:1
+sample.py	../day9/sample.py	1;"	kind:file	line:1
+say	../day17/sample.py	/^    def say(self, word):$/;"	kind:member	line:133
+select_sort	../day16/algo_sort.py	/^def select_sort(items, cmp=lambda x, y: x > y):$/;"	kind:function	line:16
+sequence_search	../day16/algo_search.py	/^def sequence_search(items, key):$/;"	kind:function	line:4
+server	../day14/sample.py	/^def server():$/;"	kind:function	line:16
+set	../day18/mixin.py	/^    def set(self, key, value):$/;"	kind:member	line:20
+set	../day18/mixin.py	/^    def set(self, key, value):$/;"	kind:member	line:8
+sha1.py	../samples/sha1.py	1;"	kind:file	line:1
+show	../day18/poke_enum.py	/^    def show(self):$/;"	kind:member	line:75
+show_about	../day13/sample.py	/^    def show_about():$/;"	kind:function	line:22
+show_help	../samples/sha1.py	/^def show_help():$/;"	kind:function	line:62
+shuffle	../day16/algo_search.py	/^from random import shuffle, randint$/;"	kind:namespace	line:1
+shuffle	../day18/poke_enum.py	/^    def shuffle(self):$/;"	kind:member	line:48
+shuffle	../day9/sample.py	/^    def shuffle(self):$/;"	kind:member	line:49
+singleton	../day17/sample.py	/^def singleton(cls):$/;"	kind:function	line:111
+sleep	../day14/sample.py	/^from time import sleep$/;"	kind:namespace	line:4
+socket	../day14/sample.py	/^from socket import socket, AF_INET, SOCK_STREAM$/;"	kind:namespace	line:1
+sort	../day18/poke_enum.py	/^    def sort(self):$/;"	kind:member	line:72
+soup	../samples/boc_atm.py	/^    soup = BeautifulSoup(data, 'lxml')$/;"	kind:variable	line:18
+split_str	../day12/sample.py	/^def split_str(sentence):$/;"	kind:function	line:67
+sqrt	../day10/pygame_demo.py	/^from math import sqrt$/;"	kind:namespace	line:3
+ssl	../samples/angelia/botutils.py	/^import ssl$/;"	kind:namespace	line:6
+ssl	../samples/mybot.py	/^import ssl$/;"	kind:namespace	line:6
+ssr	../samples/qrcode.py	/^            ssr = 'ssr:\/\/'+base64.b64decode(ssr[6:]).decode()+'&protoparam=&obfsparam='$/;"	kind:variable	line:56
+ssr_lst	../samples/qrcode.py	/^    ssr_lst = base64.b64decode('c3NyOi8vWXpoek1TNXFZVzFxWVcxekxtNWxkRG94TURBd05qcHZjbWxuYVc0NllXVnpMVEkxTmkxblkyMDZjR3hoYVc0NlUxWkdWMUpZUm5sWk0xcHdUMEU5UFM4L2NtVnRZWEpyY3oxVWEwWlVVVk13ZUE9PQpzc3I6Ly9Zemh6TWk1cVlXMXFZVzF6TG01bGREb3hNREF3TmpwdmNtbG5hVzQ2WVdWekxUSTFOaTFuWTIwNmNHeGhhVzQ2VTFaR1YxSllSbmxaTTFwd1QwRTlQUzgvY21WdFlYSnJjejFVYTBaVVVWTXdlUT09CnNzcjovL1l6aHpNeTVxWVcxcVlXMXpMbTVsZERveE1EQXdOanB2Y21sbmFXNDZZV1Z6TFRJMU5pMW5ZMjA2Y0d4aGFXNDZVMVpHVjFKWVJubFpNMXB3VDBFOVBTOC9jbVZ0WVhKcmN6MVVhMFpVVVZNd2VnPT0Kc3NyOi8vWXpoek5DNXFZVzFxWVcxekxtNWxkRG94TURBd05qcHZjbWxuYVc0NllXVnpMVEkxTmkxblkyMDZjR3hoYVc0NlUxWkdWMUpZUm5sWk0xcHdUMEU5UFM4L2NtVnRZWEpyY3oxVWEwWlVVVk13TUE9PQpzc3I6Ly9Zemh6TlM1cVlXMXFZVzF6TG01bGREb3hNREF3TmpwdmNtbG5hVzQ2WVdWekxUSTFOaTFuWTIwNmNHeGhhVzQ2VTFaR1YxSllSbmxaTTFwd1QwRTlQUzgvY21WdFlYSnJjejFVYTBaVVVWTXdNUT09CnNzcjovL056UXVNVEl3TGpFM05DNHlORE02TkRRek9tOXlhV2RwYmpwaFpYTXRNalUyTFdkamJUcHdiR0ZwYmpwWmJWbDZUbnBSZWs1VVFYaFBSRkY2VDBkWmVVNVJQVDB2UDNKbGJXRnlhM005VWtWTmVreFZUazlOYVRGQwpzc3I6Ly9PVFV1TVRZNUxqSTJMamt3T2pZMU5UTTFPbTl5YVdkcGJqcGphR0ZqYUdFeU1DMXBaWFJtT25Cc1lXbHVPazFIVm14T1JHc3hUVmRWTlZwdFVtMU5WMGswV21jOVBTOC9jbVZ0WVhKcmN6MVNSVTE2VEZWT1QwMXBNVU09').decode().split()$/;"	kind:variable	line:51
+start	../day10/pygame_demo.py	/^    def start(self):$/;"	kind:member	line:95
+start	../samples/clock.py	/^    def start(self, max=-1):$/;"	kind:member	line:30
+stop	../samples/clock.py	/^    def stop(self):$/;"	kind:member	line:26
+sub	../samples/sub_ssr.py	/^def sub():$/;"	kind:function	line:11
+sub_ssr.py	../samples/sub_ssr.py	1;"	kind:file	line:1
+sub_url	../samples/sub_ssr.py	/^    sub_url = 'https:\/\/api.st.link\/sss\/nasa\/c3269c34'$/;"	kind:variable	line:39
+subscribe	../samples/sub_ssr.py	/^def subscribe(url):$/;"	kind:function	line:31
+suite	../day18/poke_enum.py	/^    def suite(self):$/;"	kind:member	line:27
+suite	../day9/sample.py	/^    def suite(self):$/;"	kind:member	line:17
+suite_char	../day18/poke_enum.py	/^    suite_char = ['♠️', '♥️', '♣️', '♦️']$/;"	kind:variable	line:19
+sum	../day6/sample.py	/^def sum(*args):$/;"	kind:function	line:14
+summary	../day13/sample.py	/^def summary():$/;"	kind:function	line:46
+summary_task	../day13/sample.py	/^def summary_task(numbers, queue):$/;"	kind:function	line:40
+sys	../day1/sample.py	/^    import sys$/;"	kind:namespace	line:12
+sys	../day7/sample.py	/^import sys$/;"	kind:namespace	line:3
+sys	../day8/sample.py	/^import sys$/;"	kind:namespace	line:5
+sys	../samples/angelia/main.py	/^import sys$/;"	kind:namespace	line:4
+sys	../samples/clock.py	/^import sys$/;"	kind:namespace	line:4
+sys	../samples/mybot.py	/^import sys$/;"	kind:namespace	line:9
+sys	../samples/sha1.py	/^import sys$/;"	kind:namespace	line:3
+sys	../samples/sub_ssr.py	/^import sys$/;"	kind:namespace	line:3
+test_bot	../samples/angelia/main.py	/^def test_bot(config):$/;"	kind:function	line:71
+test_bot	../samples/mybot.py	/^def test_bot(config):$/;"	kind:function	line:67
+test_collections	../day16/sample.py	/^def test_collections():$/;"	kind:function	line:71
+test_creator	../day7/sample.py	/^def test_creator():$/;"	kind:function	line:9
+test_decorate1	../day17/sample.py	/^def test_decorate1():$/;"	kind:function	line:27
+test_decorate2	../day17/sample.py	/^def test_decorate2():$/;"	kind:function	line:52
+test_decorate3	../day17/sample.py	/^def test_decorate3():$/;"	kind:function	line:82
+test_decorate4	../day17/sample.py	/^def test_decorate4():$/;"	kind:function	line:105
+test_generator	../day16/sample.py	/^def test_generator():$/;"	kind:function	line:5
+test_heapq	../day16/sample.py	/^def test_heapq():$/;"	kind:function	line:40
+test_itertools	../day16/sample.py	/^def test_itertools():$/;"	kind:function	line:60
+test_max_subset	../day16/sample.py	/^def test_max_subset():$/;"	kind:function	line:138
+test_mod	../day6/sample.py	/^def test_mod():$/;"	kind:function	line:29
+test_singleton	../day17/sample.py	/^def test_singleton():$/;"	kind:function	line:137
+test_turtle	../day1/sample.py	/^def test_turtle():$/;"	kind:function	line:33
+thief	../day16/algo_greedy.py	/^def thief():$/;"	kind:function	line:2
+this	../day1/sample.py	/^    import this$/;"	kind:namespace	line:51
+thread.py	../day13/thread.py	1;"	kind:file	line:1
+threading	../day20/sample.py	/^import threading$/;"	kind:namespace	line:2
+threading	../samples/clock.py	/^import threading$/;"	kind:namespace	line:5
+tick	../day8/sample.py	/^    def tick(self):$/;"	kind:member	line:24
+time	../day13/account.py	/^import time$/;"	kind:namespace	line:3
+time	../day13/process.py	/^import time$/;"	kind:namespace	line:3
+time	../day13/sample.py	/^import time$/;"	kind:namespace	line:5
+time	../day13/thread.py	/^import time$/;"	kind:namespace	line:3
+time	../day17/sample.py	/^import time$/;"	kind:namespace	line:2
+time	../day20/sample.py	/^import time$/;"	kind:namespace	line:1
+time	../day7/sample.py	/^import time$/;"	kind:namespace	line:5
+time	../day8/sample.py	/^import time$/;"	kind:namespace	line:3
+time	../samples/angelia/main.py	/^import time$/;"	kind:namespace	line:3
+time	../samples/clock.py	/^import time$/;"	kind:namespace	line:6
+time	../samples/mybot.py	/^import time$/;"	kind:namespace	line:8
+title	../samples/angelia/botutils.py	/^    def title(self):$/;"	kind:member	line:153
+title	../samples/angelia/botutils.py	/^    def title(self, title):$/;"	kind:member	line:157
+tkinter	../day10/sample.py	/^import tkinter$/;"	kind:namespace	line:3
+tkinter	../day13/sample.py	/^import tkinter$/;"	kind:namespace	line:3
+tkinter	../day13/sample.py	/^import tkinter.messagebox$/;"	kind:namespace	line:4
+tkinter	../samples/clock.py	/^import tkinter$/;"	kind:namespace	line:7
+trend_item_str	../samples/mybot.py	/^def trend_item_str(item):$/;"	kind:function	line:153
+turtle	../day1/sample.py	/^    import turtle$/;"	kind:namespace	line:34
+unique	../day10/pygame_demo.py	/^from enum import Enum, unique$/;"	kind:namespace	line:4
+unique	../day18/poke_enum.py	/^from enum import Enum, unique$/;"	kind:namespace	line:2
+update	../samples/angelia/botutils.py	/^    def update(self):$/;"	kind:member	line:161
+update	../samples/angelia/botutils.py	/^    def update(self, update):$/;"	kind:member	line:165
+url	../samples/boc_atm.py	/^        url = baseurl % ('_'+str(i))$/;"	kind:variable	line:13
+url	../samples/boc_atm.py	/^        url = baseurl%''$/;"	kind:variable	line:11
+urlencode	../samples/angelia/botutils.py	/^from urllib.parse import urlencode, quote$/;"	kind:namespace	line:4
+urlencode	../samples/mybot.py	/^from urllib.parse import urlencode, quote$/;"	kind:namespace	line:4
+urllib	../samples/boc_atm.py	/^import urllib.request as request$/;"	kind:namespace	line:2
+urlparse	../day14/parse_url.py	/^from urllib.parse import urlparse$/;"	kind:namespace	line:2
+value	../day16/algo_greedy.py	/^        def value(self):$/;"	kind:member	line:21
+verify_code	../day7/sample.py	/^def verify_code(code_len):$/;"	kind:function	line:37
+verify_name	../day12/sample.py	/^def verify_name(username):$/;"	kind:function	line:31
+verify_qq	../day12/sample.py	/^def verify_qq(qq):$/;"	kind:function	line:22
+verify_user	../day12/sample.py	/^def verify_user(username, qq):$/;"	kind:function	line:5
+wrapper	../day17/sample.py	/^        def wrapper(*args, **kwargs):$/;"	kind:function	line:35
+wrapper	../day17/sample.py	/^        def wrapper(*args, **kwargs):$/;"	kind:function	line:65
+wrapper	../day17/sample.py	/^    def wrapper(*args, **kwargs):$/;"	kind:function	line:11
+wrapper	../day17/sample.py	/^    def wrapper(*args, **kwargs):$/;"	kind:function	line:116
+wraps	../day17/sample.py	/^from functools import wraps$/;"	kind:namespace	line:3
+yanghui	../day7/sample.py	/^def yanghui(rows):$/;"	kind:function	line:67
+yield_test	../day20/sample.py	/^def yield_test(m,n):$/;"	kind:function	line:59

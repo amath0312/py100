@@ -1,0 +1,5 @@
+BeautifulSoup4
+pyqrcode
+qrcode
+Pillow
+lxml

@@ -2,12 +2,12 @@
 
 from urllib import request
 from urllib.parse import urlencode, quote
-import bs4
 import ssl
 import json
 import os
 from abc import ABCMeta, abstractmethod
 import logging
+import bs4
 
 
 class Robot(object, metaclass=ABCMeta):
